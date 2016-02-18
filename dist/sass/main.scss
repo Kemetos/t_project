@@ -1,0 +1,14 @@
+// HELPERS
+@import 'helpers/reset';
+@import 'helpers/fonts';
+@import 'helpers/variables';
+@import 'helpers/base';
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// PAGES
+@import 'views/header';
+
+body{
+  background-color: #000;
+  color: #fff;
+}

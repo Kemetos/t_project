@@ -22,4 +22,5 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+console.log('Server running on 3000');
 app.listen(3000);

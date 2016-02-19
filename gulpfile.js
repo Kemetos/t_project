@@ -7,16 +7,9 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    plumber = require('gulp-plumber'),
-    browserSync = require('browser-sync').create();
+    plumber = require('gulp-plumber');
 
-gulp.task('browserSync', function() {
-    browserSync.init({
-        server: {
-            baseDir: 'app'
-        },
-    })
-});
+
 
 gulp.task('sass', function () {
     gulp.src('dist/sass/main.scss')
@@ -25,10 +18,7 @@ gulp.task('sass', function () {
                 console.log(error.message);
             }}))
         .pipe(sass())
-        .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+        .pipe(gulp.dest('app/css'));
 });
 
 gulp.task('js_app', function () {
@@ -39,11 +29,9 @@ gulp.task('js_app', function () {
 });
 
 
-gulp.task('watch', ['browserSync'], function() {
+gulp.task('watch', function() {
     gulp.watch('dist/sass/**/*.scss', ['sass']);
     gulp.watch('dist/js/app/**/*.js', ['js_app']);
-    gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('fonts', function() {

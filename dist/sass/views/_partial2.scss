@@ -1,6 +1,11 @@
 .big-screen{
   position: relative;
-
+  .card-title{
+    img{
+      vertical-align: -5px;
+    }
+    padding: 20px 0 0 50px;
+  }
   img.move, img.stretch{
     height: 25px;
     margin-left: 10px;
@@ -62,13 +67,14 @@
   }
   .options{
     float: right;
-    margin-right: 120px;
+    margin-right: 170px;
     img{
       margin: 0 10px;
     }
   }
   .options-1{
     z-index: 1;
+    margin-left: 20px;
     margin-top: 140px;
     img{
       margin: 0 20px;
@@ -79,7 +85,8 @@
   }
   .detail{
     width: 1200px;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-left: 30px;
     vertical-align: top;
     margin-bottom: 30px;
     font-family: 'DinNextLight', sans-serif;
@@ -102,15 +109,18 @@
     }
     .title-1{
       display: inline-block; vertical-align: top;
+      margin-top: 20px;
       width: 417px;
     }
     .title-2{
       display: inline-block;
+      margin-top: 20px;
       width: 294px;
       margin: 0 8px;
     }
     .title-3{
       display: inline-block;
+      margin-top: 20px;
       width: 390px;
       color: #AABA58;
     }

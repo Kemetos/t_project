@@ -2,10 +2,13 @@
 
   .energyCard {
     position: relative;
+    background-image: url("../images/chartEnergy.png");
+    width: 100%;
+    height: 100%;
 
     img.move {
       height: 25px;
-      margin-left: 10px;
+      margin: 15px 0 0 15px;
     }
 
     h2 {
@@ -15,6 +18,58 @@
 
       span {
         font-family: 'DinNextLight', sans-serif;
+      }
+    }
+
+    .tracker{
+
+      .blink{
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #aaba58;
+        top: 143px;
+        right: 76px;
+      }
+
+      p{
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        font-family: 'DinNextRegular', sans-serif;
+        font-size: 24px;
+
+        span{
+          font-family: 'DinNextLight', sans-serif;
+          font-size: 18px;
+        }
+      }
+    }
+
+    h3{
+      font-family: 'DinNextRegular', sans-serif;
+      margin: 260px 0 0 15px;
+    }
+
+    p{
+      margin: 10px 0 0 15px;
+      font-family: 'DinNextMedium', sans-serif;
+      font-size: 24px;
+
+      span{
+        font-family: 'DinNextLight', sans-serif;
+        font-size: 18px;
+      }
+    }
+
+    .optionsEnergy{
+      position: absolute;
+      top: 320px;
+      right: 15px;
+
+      img{
+        margin-right: 10px;
       }
     }
   }

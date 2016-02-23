@@ -3,3 +3,4 @@
 /app/css
 /app/js
 /.idea
+/app/views/index.hbs

@@ -1,10 +1,51 @@
 .bottom{
+  border-top: 1px solid white;
   height: 245px;
-  background-color: blue;
+  background-color: black;
   .top_ul{
     li{
-      display: inline-block;
+      float: left;
       padding-top: 40px;
+      p{
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+    li:first-child{
+      margin-right: 175px;
+      margin-left: 45px;
+    }
+    .chauffage_g{
+      margin-right: 80px;
+    }
+    .heat_front{
+      margin-right: 80px;
+      img{
+        padding-top: 5px;
+      }
+    }
+    .airflow{
+      margin-right: 70px;
+      p{
+        padding-top: 28px;
+      }
+    }
+    .ventilation{
+      margin-right: 70px;
+    }
+    .rear{
+      margin-right: 80px;
+      img{
+        padding-top: 5px;
+      }
+    }
+    .chauffage_d{
+      margin-right: 125px;
+    }
+    .auto{
+      p{
+        padding-top: 25px;
+      }
     }
   }
 }

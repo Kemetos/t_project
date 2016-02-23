@@ -1,5 +1,32 @@
-header.topbar{
+header{
+  background-color: black;
   width: 100%;
   height: 75px;
-  background-color: #000;
+  border-bottom: 1px solid white;
+  .topbar{
+	padding-top: 30px;
+	ul{
+  	li{
+  		font-family: DinNextLight;
+  		display: inline-block;
+      font-size: 20px;
+  	}
+  	li:first-child{
+  		margin-right: 210px;
+  		margin-left: 30px;
+  	}
+  	.clock{
+  		margin-right: 145px;
+  	}
+  	.tesla_logo{
+  		margin-right: 200px;
+  	}
+  	.wifi{
+  		margin-right: 50px;
+  	}
+  	.reseau{
+  		margin-right: 40px;
+  	}
+ 	}
+  }
 }

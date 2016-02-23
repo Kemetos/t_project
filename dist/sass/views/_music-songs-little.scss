@@ -1,0 +1,54 @@
+.screen{
+	border: 10px solid #212121;
+	font-family: 'DinNextLight', sans-serif;
+	width: 605px; height: 410px;
+	margin: 50px;
+	background: url('/app/img/calque.png'), url('/app/img/background.png') no-repeat;
+	background-position: 0 25px;
+	font-size: 21px;
+
+	.header{
+		margin: 19px 0 0 20px;
+		img{
+			vertical-align: -5px;
+		}
+		.text{
+			margin-left: 34px;
+			.medium{
+				font-family: 'DinNextMedium', sans-serif;
+			}
+		}		
+	}
+	.title{
+		text-align: center;
+		margin-top: 40px;
+	}
+	.time-bar{
+		text-align: center;
+		margin-top: 20px;
+		img{
+			margin: 0 50px;
+			vertical-align: middle;
+		}
+	}
+	.control{
+		text-align: center;
+		margin-top: 70px;
+		.change-song{
+			vertical-align: 18px;
+		}
+		img:nth-child(2){
+			margin: 0 110px;
+		}
+	}
+	.option{
+		text-align: center;
+		margin-top: 30px;
+		img{
+			margin: 0 15px;
+		}
+	}
+	
+}	
+
+

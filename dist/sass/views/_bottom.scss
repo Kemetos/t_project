@@ -1,0 +1,10 @@
+.bottom{
+  height: 245px;
+  background-color: blue;
+  .top_ul{
+    li{
+      display: inline-block;
+      padding-top: 40px;
+    }
+  }
+}

@@ -1,8 +1,13 @@
-.small-screen{
+.big-screen{
   height: 750px;
   background-color: #000;
   padding: 30px;
   position: relative;
+
+  img.move, img.stretch{
+    height: 25px;
+    margin-left: 10px;
+  }
 
   h2{
     margin-left: 20px;
@@ -43,6 +48,11 @@
   p.title{
     text-align: center;
     margin-top: -260px;
+    font-family: 'DinNextRegular', sans-serif;
+
+    span{
+      font-family: 'DinNextLight', sans-serif;
+    }
   }
 
   .time{
@@ -72,9 +82,103 @@
     margin: -20px 170px 0 0;
     z-index: 2;
     position: relative;
+    position: absolute;
+    top: 423px; margin-left: 41px;
 
     img{
       margin-left: 20px;
+      margin-right: 52px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .detail{
+    width: 1200px;
+    margin-top: 390px; vertical-align: top;
+    margin-bottom: 30px;
+    font-family: 'DinNextLight', sans-serif;
+    font-size: 18px;
+    > div > div{
+      margin-bottom: 20px;
+      margin-top: 20px;
+      &:hover{
+        cursor: pointer; color: #AABA58;
+      }
+    }
+
+    [class^="title"]{
+      background-color: #212121; color: #535353;
+      height: 46px; line-height: 50px;
+      font-family: 'DinNextMedium', sans-serif;
+      font-size: 21px; padding: 0 20px; box-sizing:border-box;
+      &:hover{
+        color: #AABA58; cursor: pointer;
+      }
+    }
+    .title-1{
+      display: inline-block; vertical-align: top;
+      width: 417px; margin-left: 27px;
+    }
+    .title-2{
+      display: inline-block;
+      width: 294px;
+      margin: 0 8px;
+    }
+    .title-3{
+      display: inline-block;
+      width: 416px;
+      color: #AABA58;
+    }
+
+    .playlist{
+      vertical-align: top;
+      display: inline-block;
+      width: 417px; height: 315px;
+      margin-left: 27px;
+
+      > div:nth-child(4), div:nth-child(6){
+        color: #AABA58;
+      }
+      img{
+        margin-left: 16px;
+      }
+      .text{
+        margin-left: 15px;
+      }
+    }
+    .artist{
+      display: inline-block;
+      vertical-align: top;
+      width: 294px; height: 315px;
+      box-sizing:border-box;
+      padding-left: 30px;
+      > div:nth-child(3), div:nth-child(4){
+        color: #AABA58;
+      }
+    }
+    .playlist-songs{
+      display: inline-block;
+      width: 416px;
+      box-sizing:border-box;
+      padding-left: 25px;
+      > div:nth-child(3){
+        display: inline-block; margin-top: 0;
+      }
+      img{
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .grid{
+    margin-left: 8px;margin: 0;
+    > div{
+      margin: 3px 3px;
+      display: inline-block;
+      width: 584px; height: 390px;
+      background-color: #212121;
     }
   }
 }

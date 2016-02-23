@@ -9,7 +9,6 @@
 @import 'views/header';
 @import 'views/partial1';
 @import 'views/partial2';
-@import 'views/partial3';
 @import "views/bottom";
 
 body{
@@ -17,33 +16,4 @@ body{
   width: 1180px;
   margin: auto;
   font-family: 'DinNextLight', sans-serif;
-}
-
-.big-screen{
-  width:1180px;
-  height: 790px;
-  background-color: #000;
-  padding: 30px;
-}
-
-.small-screen{
-  width:585px;
-  height: 390px;
-  background-color: #000;
-}
-
-.top_left{
-  float: left;
-}
-
-.top_right{
-  float: left;
-}
-
-.bottom_left{
-  float: left;
-}
-
-.bottom_right{
-  float: left;
 }

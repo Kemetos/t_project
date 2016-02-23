@@ -1,0 +1,21 @@
+.small-screen {
+
+  .energyCard {
+    position: relative;
+
+    img.move {
+      height: 25px;
+      margin-left: 10px;
+    }
+
+    h2 {
+      margin-left: 20px;
+      display: inline-block;
+      font-family: 'DinNextMedium', sans-serif;
+
+      span {
+        font-family: 'DinNextLight', sans-serif;
+      }
+    }
+  }
+}

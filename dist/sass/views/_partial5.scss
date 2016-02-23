@@ -1,0 +1,37 @@
+.phoneCard{
+  width: 100%;
+  height: 100%;
+  background: url("../images/phoneFavBG.png") no-repeat center center;
+  position: relative;
+
+  img.move {
+    height: 25px;
+    margin: 15px 0 0 15px;
+  }
+
+  h2 {
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'DinNextMedium', sans-serif;
+
+    span {
+      font-family: 'DinNextLight', sans-serif;
+    }
+  }
+
+  img.calling{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .optionsPhone{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    img{
+      margin-left: 30px;
+    }
+  }
+}

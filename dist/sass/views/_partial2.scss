@@ -1,0 +1,80 @@
+.small-screen{
+  height: 750px;
+  background-color: #000;
+  padding: 30px;
+  position: relative;
+
+  h2{
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'DinNextMedium', sans-serif;
+
+    span{
+      font-family: 'DinNextLight', sans-serif;
+    }
+  }
+
+  img.cover{
+    display: block;
+    margin: 40px auto 0 auto;
+    z-index: 1;
+  }
+
+  div.controls{
+    position: absolute;
+    top: 250px;
+
+    .prev{
+      margin: 0 200px 25px 305px;
+      cursor: pointer;
+    }
+
+    .play{
+      width: 65px;
+      cursor: pointer;
+    }
+
+    .next{
+      margin: 0 0 25px 200px;
+      cursor: pointer;
+    }
+  }
+
+  p.title{
+    text-align: center;
+    margin-top: -260px;
+  }
+
+  .time{
+    text-align: center;
+    margin-top: 40px;
+
+    .progress{
+      display: inline-block;
+      width: 440px;
+      border-bottom: 3px solid rgba(255,255,255,0.4);
+      margin: 0 10px 4px 10px;
+
+      &:after{
+        content: "";
+        width: 156px;
+        border-bottom: 3px solid rgba(255,255,255,1);
+      }
+    }
+
+    p{
+      display: inline-block;
+    }
+  }
+
+  .options{
+    float: right;
+    margin: -20px 170px 0 0;
+    z-index: 2;
+    position: relative;
+
+    img{
+      margin-left: 20px;
+    }
+  }
+}

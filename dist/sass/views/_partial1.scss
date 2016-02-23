@@ -1,0 +1,67 @@
+.big-screen{
+  height: 750px;
+  background-color: #000;
+  padding: 30px;
+  position: relative;
+
+  h2{
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'DinNextMedium', sans-serif;
+
+    span{
+      font-family: 'DinNextLight', sans-serif;
+    }
+  }
+
+  img.cover{
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+
+  div.controls{
+    position: absolute;
+    top: 180px;
+
+    .prev{
+      margin: 0 170px 50px 305px;
+      cursor: pointer;
+    }
+
+    .play{
+      cursor: pointer;
+    }
+
+    .next{
+      margin: 0 0 50px 170px;
+      cursor: pointer;
+    }
+  }
+
+  p.title{
+    text-align: center;
+    margin-top: -260px;
+  }
+
+  .time{
+    text-align: center;
+    margin-top: 30px;
+
+    .progress{
+      display: inline-block;
+      width: 440px;
+      border-bottom: 3px solid rgba(255,255,255,0.4);
+      margin: 0 10px 4px 10px;
+
+      &:after{
+        content: "";
+        width: 156px;
+        border-bottom: 3px solid rgba(255,255,255,1);
+      }
+    }
+
+    p{
+      display: inline-block;
+    }
+  }
+}

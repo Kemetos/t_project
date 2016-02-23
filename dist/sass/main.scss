@@ -7,10 +7,12 @@
 
 // PAGES
 @import 'views/header';
+@import 'views/partial1';
+@import 'views/partial2';
 
 body{
-  background-color: #000;
   color: #fff;
-  max-width: 1200px;
+  width: 1180px;
   margin: auto;
+  font-family: 'DinNextLight', sans-serif;
 }

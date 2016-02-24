@@ -1,10 +1,15 @@
-.screen{
+.screen-music{
+  display: inline-block;
   font-family: 'DinNextLight', sans-serif;
-  width: 605px; height: 410px;
+  width: 585px; height: 380px;
   background: url('../images/calque.png'), url('../images/background.png') no-repeat;
-  background-position: 0 25px;
+  background-position: 0 -15px;
+  background-size: 585px;
   font-size: 21px;
 
+  .stretch{
+    display: inline-block;
+  }
   .header{
     margin: 19px 0 0 20px;
     img{
@@ -25,18 +30,19 @@
     text-align: center;
     margin-top: 20px;
     img{
-      margin: 0 50px;
+      margin: 0 47px;
       vertical-align: middle;
     }
   }
   .control{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 40px;
     .change-song{
       vertical-align: 18px;
     }
     img:nth-child(2){
-      margin: 0 110px;
+      width: 65px;
+      margin: 0 105px;
     }
   }
   .option{

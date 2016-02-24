@@ -1,0 +1,148 @@
+.partial7{
+  .head{
+    font-size: 21px;
+    margin: 20px 0 0 30px;
+    img{
+      vertical-align: -5px;
+      margin-right: 5px;
+    }
+    .bold{
+      font-weight:bold;
+      margin-left: 20px;
+    }
+  }
+  .bloc{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4px;
+    margin-top: 20px;
+    color: #5e5e5e;
+    .script{
+      &:hover{
+        color: #d5ff00;
+        cursor: pointer;
+      }
+      line-height: 51px;
+      text-align: center;
+      display: inline-block;
+      width: 146px;
+      height: 51px;
+      font-size: 25px;
+      background-color: #202020;
+      margin-bottom: 4px;
+    }
+    .on{
+      text-align: center;
+      color: #d5ff00;
+      margin-left: 4px;
+      font-size: 28px;
+      display: inline-block;
+      width: 63px;
+      height: 51px;
+      line-height: 51px;
+      background-color: #202020;
+    }
+    .col-1{
+      display: inline-block;
+      vertical-align: top;
+      .xy, .place, .statut{
+        &:hover{
+          background-color: #d5ff00;
+          color: #000000;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        width: 89px;
+        height: 51px;
+        background-color: #202020;
+        font-size: 21px;
+        line-height: 51px;
+        text-align: center;
+        margin-bottom: 4px;
+      }
+      .activated{
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        width: 89px;
+        height: 32px;
+        line-height: 32px;
+        background-color: #d5ff00;
+        color: #000;
+      }
+    }
+
+    .col-2{
+      display: inline-block;
+      .chiffre{
+        .chiffre-1, .chiffre-2{
+          display: inline-block;
+          margin: 4px 0;
+          font-size: 22px;
+        }
+        .unit{
+          font-size: 14px;
+        }
+        .chiffre-1{
+          margin-top: 17px;
+        }
+        vertical-align: top;
+        display: inline-block;
+        background-color: #202020;
+        text-align: center;
+        width: 121px;
+        height: 77px;
+
+      }
+      .chiffre-3{
+        width: 121px;
+        height: 51px;
+        margin: 4px 0;
+        background-color: #202020;
+        text-align: center;
+        line-height: 51px;
+        font-size: 19px;
+      }
+      .at-work{
+        width: 122px;
+        height: 61px;
+        background-color: #202020;
+        font-size: 22px;
+        line-height: 61px;
+        text-align: center;
+      }
+      .refresh{
+        &:hover{
+          color: #d5ff00;
+          cursor: pointer;
+        }
+        width: 122px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 13px;
+        background-color: #202020;
+        margin-top: 4px;
+        img{
+          margin: 0 12px;
+          vertical-align: -2px;
+        }
+      }
+    }
+
+  }
+  .image{
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0 0 60px;
+    .icons{
+      text-align: center;
+      margin-top: 10px;
+      img{
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}

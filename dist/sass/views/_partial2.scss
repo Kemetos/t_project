@@ -1,5 +1,16 @@
 .big-screen{
   position: relative;
+  .stretch{
+    font-size: 21px;
+    img:first-child{
+      margin-right: 20px;
+    }
+    img{
+      vertical-align: middle;
+    }
+    padding-top: 20px;
+    padding-left: 25px;
+  }
   .card-title{
     img{
       vertical-align: -5px;
@@ -20,28 +31,33 @@
   }
   img.cover{
     display: block;
-    margin: 40px auto 0 auto;
+    margin: 35px auto 0 auto;
     z-index: 1;
   }
   div.controls{
     position: absolute;
+    width: 100%;
+    text-align: center;
     top: 250px;
     .prev{
-      margin: 0 200px 25px 305px;
+      vertical-align: middle;
       cursor: pointer;
     }
     .play{
       width: 65px;
       cursor: pointer;
+      vertical-align: middle;
+      margin: 0 100px;
     }
     .next{
-      margin: 0 0 25px 200px;
+      vertical-align: middle;
       cursor: pointer;
     }
   }
   p.title{
     text-align: center;
     margin-top: -260px;
+    font-size: 21px;
     font-family: 'DinNextRegular', sans-serif;
     span{
       font-family: 'DinNextLight', sans-serif;
@@ -75,6 +91,17 @@
   .options-1{
     z-index: 1;
     margin-left: 20px;
+    margin-top: 124px;
+    img{
+      margin: 0 20px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .options-2{
+    z-index: 1;
+    margin-left: 20px;
     margin-top: 140px;
     img{
       margin: 0 20px;
@@ -92,8 +119,6 @@
     font-family: 'DinNextLight', sans-serif;
     font-size: 18px;
     > div > div{
-      margin-bottom: 20px;
-      margin-top: 20px;
       &:hover{
         cursor: pointer; color: #AABA58;
       }
@@ -109,22 +134,29 @@
     }
     .title-1{
       display: inline-block; vertical-align: top;
-      margin-top: 20px;
+      margin-top: 15px;
       width: 417px;
     }
     .title-2{
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 15px;
       width: 294px;
       margin: 0 8px;
     }
     .title-3{
       display: inline-block;
-      margin-top: 20px;
-      width: 390px;
+      margin-top: 15px;
+      width: 395px;
       color: #AABA58;
     }
+    .playlist > div, .artist > div, .playlist-songs > div{
+
+        margin-top: 20px;
+        margin-bottom: 27px;
+
+    }
     .playlist{
+      margin-top: 5px;
       vertical-align: top;
       display: inline-block;
       width: 417px; height: 315px;
@@ -133,6 +165,7 @@
       }
       img{
         margin-left: 16px;
+        vertical-align: middle;
       }
       .text{
         margin-left: 15px;
@@ -185,10 +218,17 @@
   }
   .title-duration{
     display: inline-block;
-    width: 228px;
+    width: 235px;
     padding: 0;
   }
+
+  .list-songs > div, .album > div, .duration > div{
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+
   .list-songs{
+
     vertical-align: top;
     display: inline-block;
     width: 500px; height: 374px;
@@ -226,11 +266,12 @@
     }
     > div:nth-child(4){
       display: inline-block;
-      line-height: 31px;
+      margin: 0;
     }
     img{
       margin-left: 100px;
     }
+
   }
 }
 .grid-songs{

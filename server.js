@@ -16,5 +16,9 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+app.get('/intro', function(req, res) {
+    res.render('intro');
+});
+
 console.log('Server running on 3000');
 app.listen(3000);

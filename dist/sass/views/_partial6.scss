@@ -1,10 +1,8 @@
 .big-screen {
-  .content{
+  .contentAll{
     background-image: url('../images/mapday.png');
     width: 100%;
     height:100%;
-
-
 
   .topbar {
     .drag{
@@ -128,6 +126,11 @@
         width: 25%;
         height: 100%;
         float: left;
+
+        p{
+          position: relative;
+          top:5px;
+        }
 
         .night{
           display: none;
@@ -316,11 +319,12 @@
     }
   }
 }
-.big-screen.night {
+
+  .contentAll.night {
   background-image: url('../images/mapnight.png');
 
   .sideRight {
-    .option {;
+    .option {
       .part {
         .minus {
           top: 28px,;

@@ -6,9 +6,13 @@
     <li class="chauffage_g">
         <img src="../images/chauffage_g.png" alt="chauffage">
     </li>
-    <li class="heat_front">
+    <li class="heat_front show ">
         <img src="../images/heat_front.png" alt="heat">
         <p>Front</p>
+    </li>
+    <li class="heat_front hide">
+        <img src="../images/heat_front_white.png" alt="heat">
+        <p class="white">Front</p>
     </li>
     <li class="airflow">
         <img src="../images/airflow.png" alt="airflow">
@@ -17,9 +21,13 @@
     <li class="ventilation">
         <img src="../images/ventilation.png" alt="ventilation">
     </li>
-    <li class="rear">
+    <li class="rear show">
         <img src="../images/rear.png" alt="rear">
         <p>Rear</p>
+    </li>
+    <li class="rear hide">
+        <img src="../images/rear-off.png" alt="rear">
+        <p class=".white">Rear</p>
     </li>
     <li class="chauffage_d">
         <img src="../images/chauffage_d.png" alt="chauffage_d">
@@ -43,3 +51,17 @@
     <li class="txt_bot txt_bot_2"><p>72</p></li>
     <li><img src="../images/reglage_d.png" alt="reglage"></li>
 </ul>
+
+<script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.heat_front').click(function(){
+           $('.heat_front').toggleClass('hide');
+           $('.heat_front').toggleClass('show');
+        });
+        $('.rear').click(function(){
+            $('.rear').toggleClass('hide');
+            $('.rear').toggleClass('show');
+        });
+    });
+</script>

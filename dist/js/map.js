@@ -7,3 +7,6 @@ $(".choice.night").on("click",function(){
 $(".choice.day").on("click",function(){
     $(".contentAll").removeClass('night');
 })
+
+setInterval(function(){
+    $(".currentPos").css({scale: 1}); }, 500);

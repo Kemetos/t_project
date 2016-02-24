@@ -1,0 +1,349 @@
+.big-screen {
+  background-image: url('../images/mapday.png');
+
+  .topbar {
+    .drag{
+      position: relative;
+      left: 20px;
+      top: 10px;
+    }
+    .cancel{
+      position: relative;
+      top:15px;
+      left:40px;
+    }
+    h2{
+      font-size: 16pt;
+      top: 4px;
+      position: relative;
+      margin-left: 50px;
+    }
+
+  }
+
+  .destination{
+    position: relative;
+    top: 110px;
+    left: 390px;
+    width: 256px;
+    height: 45px;
+    background-color: #151517;
+
+    .icone{
+      position: absolute;
+      top:7px;
+      left:7px;
+      width: 32px;
+      height: 32px;
+      float: left;
+      background-color: #343434;
+      background-image: url(../images/flag.png);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+    }
+    p{
+      position: absolute;
+      top: 15px;
+      left: 50px;
+      font-family: 'DinNextRegular', sans-serif;
+    }
+  }
+
+  .sideLeft{
+    position: absolute;
+    width: 62px;
+    height: 240px;
+    background-color:#151517;
+    opacity: 0.9;
+    top:80px;
+    left:5px;
+
+
+    .part{
+      height: 25%;
+      width: 100%;
+      position: relative;
+      background-size: 30%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+
+    }
+
+    .flag {
+      background-image: url(../images/flag.png);
+    }
+    .favorite{
+      background-image: url(../images/favorite.png);
+    }
+    .list{
+      background-image: url(../images/list.png);
+    }
+    .parameters{
+      background-image: url(../images/parameter.png);
+    }
+  }
+  .daynight{
+    position: absolute;
+    background-color: black;
+    width: 62px;
+    height: 125px;
+    left: 5px;
+    top: 320px;
+
+    .choice{
+      position: relative;
+      width: 100%;
+      height: 50%;
+      background-size: 30%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+    .day{
+      background-image: url(../images/day.png);
+    }
+    .night{
+      background-image: url(../images/night.png);
+    }
+  }
+  .sideRight{
+    position: absolute;
+    width: 368px;
+    height: 623px;
+    top:80px;
+    right:25px;
+
+    .option{
+      position: relative;
+      background-color: #151517;
+      width: 100%;
+      height:93px ;
+      .part{
+        width: 25%;
+        height: 100%;
+        float: left;
+
+        .night{
+          display: none;
+        }
+
+        img {
+          position: relative;
+          width: 20px;
+
+          left: 30px;
+          top: 20px;
+        }
+        .title{
+          position: absolute;
+          width: 88px;
+          height: 28px;
+          text-align: center;
+          background-color: #232325;
+          color: #f48a4a;
+          bottom:3px;
+          font-family: 'DinNextRegular', sans-serif"";
+        }
+
+      }
+    }
+    .instructionFirst{
+      position: absolute;
+      width: 100%;
+      height: 250px;
+      background-color: #FFFFFF;
+      opacity: 0.9;
+
+      .current{
+        position: absolute;
+        width: 68px;
+        height: 68px;
+        background-image: url(../images/current.png);
+        background-size: 100%;
+        top:15px;
+        left: 20px;
+      }
+      .distance{
+        position: absolute;
+        left:100px;
+        top:110px;
+
+        .miles{
+          font-family: 'DinNextRegular', sans-serif;
+          color: black;
+        }
+        .street{
+          font-family: 'DinNextRegular', sans-serif;
+          font-weight: bold;
+          color: #f48a4a;
+          font-size: 20px;
+          margin-top: 7px;
+        }
+
+      }
+      .direction{
+        position: absolute;
+        top:93px;
+        right:53px;
+        width: 52px;
+        height: 66px;
+        background-image: url(../images/arrowrightblk.png);
+        background-size:100%;
+      }
+      .time{
+        position: absolute;
+        font-family: 'DinNextLight', sans-serif;
+        bottom: 10px;
+        left: 25px;
+        color: #000;
+      }
+      .step {
+        border: 1px solid #000000;
+        border-radius: 20px;
+        color: #000000;
+        width: 39px;
+        height: 39px;
+        position: relative;
+        top: 175px;
+        left: 25px;
+        text-align: center;
+
+        p {
+          position: relative;
+          top: 12px;
+
+        }
+      }
+    }
+    .instruction{
+      position: relative;
+      width: 100%;
+      height: 95px;
+      background-color: #151517;
+      opacity: 0.9;
+      
+      .time{
+        position: relative;
+        left:27px;
+        .step{
+          border: 1px solid #FFFFFF;
+          border-radius: 20px;
+          color: #FFFFFF;
+          width: 39px;
+          height: 39px;
+          position: relative;
+          top:20px;
+
+          p{
+            position: relative;
+            top:12px;
+          }
+        }
+        .timeStep{
+          text-align: left;
+          top: 30px;
+          position: relative;
+          left: 3px;
+        }
+      }
+      .distance{
+        position: absolute;
+        top:30px;
+        left: 97px;
+
+        .street{
+          font-weight: bold;
+        }
+      }
+      .direction{
+        top: 32px;
+        right: 60px;
+        width: 27px;
+        height: 33px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size:100%;
+      }
+    }
+    .instruction.scd{
+      top:210px;
+      .direction{
+        background-image: url('../images/arrowSmallright.png');
+      }
+    }
+    .instruction.third{
+      top:170px;
+      .direction {
+        background-image: url('../images/arrowSmallleft.png');
+      }
+    }
+    .global{
+      position: relative;
+      top:170px;
+      height: 94px;
+      width: 100%;
+      background-color: #000000;
+      .content {
+        position: relative;
+        left:calc(50% - 150px);
+        top:30px;
+        width: 300px;
+
+
+        .inside {
+          height: 100%;
+          width: 33%;
+          float: left;
+
+          .value {
+            text-align: center;
+          }
+          img {
+            position: relative;
+            left:40px;
+            height: 20px;
+            margin-bottom: 10px;
+          }
+
+        }
+      }
+    }
+  }
+}
+.big-screen.night{
+  background-image: url('../images/mapnight.png');
+
+  .sideRight{
+      .option {;
+        .part {
+          .minus{
+            top:28px,;
+          }
+          .night {
+            display: block;
+          }
+          img {
+            display: none;
+          }
+        }
+      }
+
+    .instructionFirst{
+      background-color: black;
+      .miles{
+        color: #FFFFFF;
+      }
+      .direction{
+        background-image: url(../images/arrowrightwht.png);
+      }
+      .step{
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+      }
+      .time{
+        color: #FFFFFF;
+      }
+    }
+  }
+}

@@ -9,3 +9,19 @@ var switchPhone = function(){
   $('.phoneCard').css("display","none");
   $('.tapDial').css("display","block");
 };
+
+var switchMusic1 = function(){
+    $('.playlistCard').css("display","none");
+    $('.songsCard').css("display","block");
+};
+
+var switchMusic2 = function(){
+    $('.songsCard').css("display","none");
+    $('.playlistCard').css("display","block");
+};
+
+var switchMusic3 = function(){
+    $('.songsCard').css("display","none");
+    $('.playlistCard').css("display","none");
+    $('.musicFullscreen').css("display","block");
+};

@@ -34,27 +34,31 @@
     <div class="detail">
         <div class="title-1">PLAYLISTS</div><div class="title-2">ARTISTS</div><div class="title-3">ANGTIGONE & DAVID BOWIE</div>
         <div class="playlist">
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Genius</span></div>
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Ajouts récents</span></div>
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Année 90</span></div>
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Rock'n'Roll</span></div>
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Intermédiaire</span></div>
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Disco Music</span></div>
-            <div><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Musique classique</span></div>
+            <div class="song1"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Genius</span></div>
+            <div class="song2"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Ajouts récents</span></div>
+            <div class="song3"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Année 90</span></div>
+            <div class="song4"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Rock'n'Roll</span></div>
+            <div class="song5"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Intermédiaire</span></div>
+            <div class="song6"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Disco Music</span></div>
+            <div class="song7"><img src="../images/icon-playlist.png" alt="playlist"><span class="text">Musique classique</span></div>
         </div>
         <div class="artist">
-            <div>The Offsprings</div>
-            <div>The Rolling Stones</div>
-            <div>Antigone</div>
-            <div>David Bowie</div>
-            <div>Nirvana</div>
-            <div>Coldplay</div>
-            <div>The Libertines</div>
+            <div class="song1">The Offsprings</div>
+            <div class="song2">The Rolling Stones</div>
+            <div class="song3">Antigone</div>
+            <div class="song4">David Bowie</div>
+            <div class="song5">Nirvana</div>
+            <div class="song6">Coldplay</div>
+            <div class="song7">The Libertines</div>
         </div>
         <div class="playlist-songs">
-            <div>Dead Monster - David Bowie</div>
-            <div>Talk To God - Antigone</div>
-            <div>When The Sky Was Open - David Bowie</div><img src="../images/playing-icon.png" alt="playing">
+            <div class="song1">Dead Monster - David Bowie</div><img class="song1" src="/../images/playing-icon.png" alt="playing">
+            <div class="song2">Talk To God - Antigone</div><img class="song2" src="/../images/playing-icon.png" alt="playing">
+            <div class="song3">Bouncy beats that move your feet</div><img class="song3" src="../images/playing-icon.png" alt="playing">
+            <div class="song4">Power workout songs to pick up </div><img class="song4" src="../images/playing-icon.png" alt="playing">
+            <div class="song5">Motivating lyrics that stoke</div><img class="song5" src="../images/playing-icon.png" alt="playing">
+            <div class="song6">Music makeovers for any workout</div><img class="song6" src="../images/playing-icon.png" alt="playing">
+            <div class="song7">Songs for stretches and asanas</div><img class="song7" src="../images/playing-icon.png" alt="playing">
         </div>
     </div>
 </div>
@@ -144,12 +148,12 @@
     </div>
 </div>
 
+
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
 
         $('.duration img').css('visibility', 'hidden');
-
         $('.list-songs > div').click(function() {
 
             $('.list-songs > div').css('color', '#FFF');
@@ -162,6 +166,20 @@
             $(".duration > img").css('visibility', 'hidden');
             $(".duration > img[class='"+song+"']").css('visibility', 'visible');
 
+        });
+
+        $('.playlist-songs img').css('visibility', 'hidden');
+        $('.playlist > div').click(function() {
+
+            $('.playlist > div').css('color', '#FFF');
+            $('.artist> div').css('color', '#FFF');
+            var song = $(this).attr('class');
+
+            $(".playlist > div[class='"+song+"']").css('color', '#AABA58');
+            $(".artist > div[class='"+song+"']").css('color', '#AABA58');
+
+            $(".playlist-songs > img").css('visibility', 'hidden');
+            $(".playlist-songs > img[class='"+song+"']").css('visibility', 'visible');
 
         });
 

@@ -4,6 +4,10 @@
         <p>Controls</p>
     </li>
     <li class="chauffage_g">
+        <img src="../images/chauffage_g_5.png" alt="chauffage">
+        <img src="../images/chauffage_g_4.png" alt="chauffage">
+        <img src="../images/chauffage_g_3.png" alt="chauffage">
+        <img src="../images/chauffage_g_2.png" alt="chauffage">
         <img src="../images/chauffage_g.png" alt="chauffage">
     </li>
     <li class="heat_front show ">
@@ -27,10 +31,14 @@
     </li>
     <li class="rear hide">
         <img src="../images/rear-off.png" alt="rear">
-        <p class=".white">Rear</p>
+        <p class="dark">Rear</p>
     </li>
     <li class="chauffage_d">
-        <img src="../images/chauffage_d.png" alt="chauffage_d">
+        <img src="../images/chauffage_g_5.png" alt="chauffage">
+        <img src="../images/chauffage_g_4.png" alt="chauffage">
+        <img src="../images/chauffage_g_3.png" alt="chauffage">
+        <img src="../images/chauffage_g_2.png" alt="chauffage">
+        <img src="../images/chauffage_g.png" alt="chauffage_d">
     </li>
     <li class="auto">
         <img src="../images/on_off.png" alt="on_off">
@@ -56,12 +64,21 @@
 <script>
     $(document).ready(function(){
         $('.heat_front').click(function(){
-           $('.heat_front').toggleClass('hide');
-           $('.heat_front').toggleClass('show');
+           $('.heat_front').toggleClass('hide').oggleClass('show');
         });
         $('.rear').click(function(){
-            $('.rear').toggleClass('hide');
-            $('.rear').toggleClass('show');
+            $('.rear').toggleClass('hide').toggleClass('show');
+        });
+
+        $(".chauffage_g").click(function() {
+            $(".chauffage_g img:last").fadeToggle("slow", function() {
+                $(this).prependTo(".chauffage_g").show()
+            });
+        });
+        $(".chauffage_d").click(function() {
+            $(".chauffage_d img:last").fadeToggle("slow", function() {
+                $(this).prependTo(".chauffage_d").show()
+            });
         });
     });
 </script>

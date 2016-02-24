@@ -2,5 +2,6 @@
 /app/images
 /app/css
 /app/js/app.js
+/app/videos
 /.idea
 /app/views/index.hbs

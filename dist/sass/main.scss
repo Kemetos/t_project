@@ -7,14 +7,14 @@
 
 // PAGES
 @import 'views/header';
-@import 'views/partial1';
-@import 'views/partial2';
-@import 'views/partial3';
-@import 'views/partial4';
-@import 'views/partial5';
-@import 'views/partial5bis';
-@import 'views/partial6';
-@import 'views/partial7';
+@import 'views/bigMusic';
+@import 'views/bigMusic2';
+@import 'views/smallEnergy';
+@import 'views/smallMusic';
+@import 'views/smallPhone';
+@import 'views/smallPhone2';
+@import 'views/bigNav';
+@import 'views/smallSpy';
 @import "views/bottom";
 
 body{
@@ -23,6 +23,14 @@ body{
   margin: auto;
   font-family: 'DinNextLight', sans-serif;
   background-color: #212121;
+}
+
+.full-screen{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .big-screen{

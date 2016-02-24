@@ -22,6 +22,12 @@
     .chauffage_g{
       margin-right: 80px;
     }
+    .show{
+      display: inline-block;
+    }
+    .hide{
+      display: none;
+    }
     .heat_front{
       margin-right: 80px;
       p{
@@ -30,7 +36,11 @@
       img{
         padding-top: 5px;
       }
+      .white{
+        color: white;
+      }
     }
+
     .airflow{
       margin-right: 70px;
       p{
@@ -44,6 +54,9 @@
       margin-right: 80px;
       img{
         padding-top: 5px;
+      }
+      .white{
+        color: white;
       }
     }
     .chauffage_d{

@@ -1,5 +1,6 @@
 .big-screen{
   position: relative;
+
   .stretch{
     font-size: 21px;
     img:first-child{
@@ -196,6 +197,10 @@
       height: 390px;
       background-color: #212121;
     }
+  }
+
+  .songsCard{
+    display: none;
   }
 }
 

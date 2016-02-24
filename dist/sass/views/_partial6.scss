@@ -1,5 +1,10 @@
 .big-screen {
-  background-image: url('../images/mapday.png');
+  .content{
+    background-image: url('../images/mapday.png');
+    width: 100%;
+    height:100%;
+
+
 
   .topbar {
     .drag{
@@ -311,39 +316,40 @@
     }
   }
 }
-.big-screen.night{
+.big-screen.night {
   background-image: url('../images/mapnight.png');
 
-  .sideRight{
-      .option {;
-        .part {
-          .minus{
-            top:28px,;
-          }
-          .night {
-            display: block;
-          }
-          img {
-            display: none;
-          }
+  .sideRight {
+    .option {;
+      .part {
+        .minus {
+          top: 28px,;
+        }
+        .night {
+          display: block;
+        }
+        img {
+          display: none;
         }
       }
+    }
 
-    .instructionFirst{
+    .instructionFirst {
       background-color: black;
-      .miles{
+      .miles {
         color: #FFFFFF;
       }
-      .direction{
+      .direction {
         background-image: url(../images/arrowrightwht.png);
       }
-      .step{
+      .step {
         border: 1px solid #FFFFFF;
         color: #FFFFFF;
       }
-      .time{
+      .time {
         color: #FFFFFF;
       }
     }
   }
+}
 }

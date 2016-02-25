@@ -1,0 +1,94 @@
+.big-screen{
+    width: 100%;
+  height: 1440px !important;
+  z-index:99999;
+    .content{
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      z-index:99999;
+
+      .upperPart{
+        position: absolute;
+        width: 100%;
+        height: 718px;
+        background-image: url(../images/bgControls.png);
+        .title{
+          position: relative;
+          text-align: center;
+          font-family: 'DinNextRegular', sans-serif;
+          font-size: 25px;
+          top:40px;
+        }
+        .option{
+          position: absolute;
+          height: 40px;
+          width: 160px;
+          left:35px;
+          top:37px;
+          img{
+            float: left;
+          }
+          p{
+            position: relative;
+            font-family: 'DinNextRegular', sans-serif;
+            top: 11px;
+            left: 20px;
+          }
+        }
+        .info{
+          position: relative;
+          width: 850px;
+          height: 210px;
+          top: 40px;
+          left:calc(50% - 425px;);
+
+
+            .informations {
+              position: relative;
+              height: 210px;
+              width: 210px;
+              float: left;
+              margin-right: 100px;
+              .inside {
+                position: relative;
+                top: 60px;
+                left: 40px;
+                  .value {
+                    .number {
+                      float: left;
+                      font-size: 40pt;
+                      color: #282828;
+                    }
+                    .unit {
+                      font-size: 15pt;
+                      color: #d8ff1b;
+                      position: relative;
+                      top: 25px;
+                      left: 10px;
+                    }
+                  }
+                  .title {
+                    text-align: center;
+                    position: relative;
+                    right: 90px;
+                    top: 50px;
+                    font-size: 16px;
+                  }
+
+                }
+
+              }
+              .distance {
+                border: 2px solid #282828;
+                border-radius: 120px;
+              }
+              .avg {
+                margin-right: 0px;
+              }
+        }
+      }
+
+    }
+
+}

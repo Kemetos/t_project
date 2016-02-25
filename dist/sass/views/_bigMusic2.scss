@@ -154,15 +154,16 @@
       vertical-align: top;
       display: inline-block;
       width: 417px; height: 315px;
-      > div:nth-child(4), div:nth-child(6){
-        color: #AABA58;
-      }
       img{
         margin-left: 16px;
         vertical-align: middle;
       }
       .text{
         margin-left: 15px;
+      }
+      > div:hover{
+        cursor: pointer;
+        color: #AABA58;
       }
     }
     .artist{
@@ -171,17 +172,16 @@
       width: 294px; height: 315px;
       box-sizing:border-box;
       padding-left: 30px;
-      > div:nth-child(3), div:nth-child(4){
-        color: #AABA58;
-      }
     }
     .playlist-songs{
       display: inline-block;
       width: 416px;
       box-sizing:border-box;
       padding-left: 25px;
-      > div:nth-child(3){
-        display: inline-block; margin-top: 0;
+      > div{
+        display: inline-block;
+        width: 270px;
+        margin: 20px 0 7px 0;
       }
       img{
         margin-left: 30px;

@@ -23,6 +23,7 @@ $('.bottomPart .lights ul li').on('click',function(){
 
 var showControls = function(){
     $(".full-screen").css("display", "block");
+    counter();
 };
 
 var hideControls = function(){

@@ -3219,7 +3219,15 @@ header {
             display: inline-block;
             margin-right: 130px;
             font-size: 20px;
-            font-family: 'DinNextLight', sans-serif; }
+            font-family: 'DinNextLight', sans-serif;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+          .big-screen .content .bottomPart .lights ul li.active {
+            color: #d5ff02; }
           .big-screen .content .bottomPart .lights ul .on {
             margin-right: 0px; }
       .big-screen .content .bottomPart .lightsType {

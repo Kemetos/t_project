@@ -22,6 +22,7 @@ var switchPlay = function(){
     $(".play").toggleClass("hide");
     $(".pause").toggleClass("show");
 }
+<<<<<<< HEAD
 
 $(document).ready(function() {
     $(document).keydown(function (e) {
@@ -38,3 +39,18 @@ $(document).ready(function() {
 $('.threat .content .choice').on('click',function(){
     $('.threat').fadeOut();
 })
+=======
+var counter = function(){
+    $('.number').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+}
+>>>>>>> d00dfed53afb88bffbe949328a3a190d5b26032c

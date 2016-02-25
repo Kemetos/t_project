@@ -1,6 +1,6 @@
 $('.bottomPart .locks table tr .switch .switchSpace .button').on("click",function(){
     $(this).toggleClass('lock');
-})
+});
 
 
 $(".bottomPart .suspension ul li").click(function() {
@@ -19,4 +19,12 @@ $('.bottomPart .lights ul li').on('click',function(){
     $('.bottomPart .lights .selector').css({left:pos.left + "px"});
     $(".lights ul li").removeClass("active");
     $(this).addClass("active");
-})
+});
+
+var showControls = function(){
+    $(".full-screen").css("display", "block");
+};
+
+var hideControls = function(){
+    $(".full-screen").css("display", "none");
+};

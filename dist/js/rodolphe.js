@@ -20,6 +20,7 @@ TweenMax.staggerFrom(objects, 1, {y:"-=2000"}, 0.2);
 
 var switchPlay = function(){
     $(".play").toggleClass("hide");
+    console.log('cc');
     $(".pause").toggleClass("show");
 }
 var counter = function(){

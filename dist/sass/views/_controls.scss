@@ -99,21 +99,28 @@
           font-size: 25px;
           top:40px;
         }
-        .lights{
+        .lights {
           position: relative;
           top: 60px;
-          width:642px;
+          width: 642px;
           height: 56px;
           background-color: #212121;
           border-radius: 40px;
-          left:calc(50% - 321px);
-          .active{
+          left: calc(50% - 321px);
+
+          .selector{
             position: absolute;
-            width: 124px;
-            height: 58px;
+            width: 110px;
+            height: 53px;
             background-color: #464646;
             border-radius: 40px;
             border:1px solid #d5ff02;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
 
           }
           ul{

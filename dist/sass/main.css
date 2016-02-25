@@ -2336,13 +2336,14 @@ header {
       display: inline-block;
       width: 417px;
       height: 315px; }
-      .big-screen .detail .playlist > div:nth-child(4), .big-screen .detail .playlist div:nth-child(6) {
-        color: #AABA58; }
       .big-screen .detail .playlist img {
         margin-left: 16px;
         vertical-align: middle; }
       .big-screen .detail .playlist .text {
         margin-left: 15px; }
+      .big-screen .detail .playlist > div:hover {
+        cursor: pointer;
+        color: #AABA58; }
     .big-screen .detail .artist {
       display: inline-block;
       vertical-align: top;
@@ -2350,16 +2351,15 @@ header {
       height: 315px;
       box-sizing: border-box;
       padding-left: 30px; }
-      .big-screen .detail .artist > div:nth-child(3), .big-screen .detail .artist div:nth-child(4) {
-        color: #AABA58; }
     .big-screen .detail .playlist-songs {
       display: inline-block;
       width: 416px;
       box-sizing: border-box;
       padding-left: 25px; }
-      .big-screen .detail .playlist-songs > div:nth-child(3) {
+      .big-screen .detail .playlist-songs > div {
         display: inline-block;
-        margin-top: 0; }
+        width: 270px;
+        margin: 20px 0 7px 0; }
       .big-screen .detail .playlist-songs img {
         margin-left: 30px; }
   .big-screen .grid {
@@ -2608,6 +2608,32 @@ header {
       border-radius: 20px; }
     .bottom_left .tapDial .right_call img {
       margin-top: 20px; }
+
+.minicard {
+  background-image: url("../images/card.png");
+  background-size: contain;
+  width: 100%;
+  height: 100%; }
+  .minicard .topbar .drag {
+    position: relative;
+    left: 20px;
+    top: 10px; }
+  .minicard .topbar .cancel {
+    position: relative;
+    top: 15px;
+    left: 40px; }
+  .minicard .topbar h2 {
+    font-size: 16pt;
+    top: 4px;
+    position: relative;
+    margin-left: 50px; }
+  .minicard .menu .options {
+    position: absolute; }
+  .minicard .menu .opt1 {
+    top: 60px; }
+  .minicard .menu .opt2 {
+    bottom: 0px;
+    left: 110px; }
 
 .big-screen .contentAll {
   background-image: url("../images/mapday.png");
@@ -3012,13 +3038,17 @@ header {
     margin-right: 175px;
     margin-left: 45px; }
   .bottom .top_ul .chauffage_g {
+    position: relative;
     margin-right: 80px; }
+    .bottom .top_ul .chauffage_g img {
+      position: absolute; }
   .bottom .top_ul .show {
     display: inline-block; }
   .bottom .top_ul .hide {
     display: none; }
   .bottom .top_ul .heat_front {
-    margin-right: 80px; }
+    margin-left: 30px;
+    margin-right: 70px; }
     .bottom .top_ul .heat_front p {
       color: #6b6b6b; }
     .bottom .top_ul .heat_front img {
@@ -3029,16 +3059,23 @@ header {
     margin-right: 70px; }
     .bottom .top_ul .airflow p {
       padding-top: 28px; }
+    .bottom .top_ul .airflow p.dark {
+      color: #404040; }
   .bottom .top_ul .ventilation {
     margin-right: 70px; }
+    .bottom .top_ul .ventilation img {
+      position: absolute; }
   .bottom .top_ul .rear {
+    margin-left: 60px;
     margin-right: 80px; }
     .bottom .top_ul .rear img {
       padding-top: 5px; }
-    .bottom .top_ul .rear .white {
-      color: white; }
+    .bottom .top_ul .rear .dark {
+      color: #404040; }
   .bottom .top_ul .chauffage_d {
-    margin-right: 125px; }
+    margin-right: 170px; }
+    .bottom .top_ul .chauffage_d img {
+      position: absolute; }
   .bottom .top_ul .auto p {
     padding-top: 25px; }
   .bottom .bot_ul li {
@@ -3057,6 +3094,8 @@ header {
     margin-right: 80px; }
     .bottom .bot_ul .sync p {
       padding-top: 20px; }
+    .bottom .bot_ul .sync p.dark {
+      color: #404040; }
     .bottom .bot_ul .sync img {
       padding-left: 6px; }
   .bottom .bot_ul .climate {
@@ -3159,13 +3198,19 @@ header {
         background-color: #212121;
         border-radius: 40px;
         left: calc(50% - 321px); }
-        .big-screen .content .bottomPart .lights .active {
+        .big-screen .content .bottomPart .lights .selector {
           position: absolute;
-          width: 124px;
-          height: 58px;
+          width: 110px;
+          height: 53px;
           background-color: #464646;
           border-radius: 40px;
-          border: 1px solid #d5ff02; }
+          border: 1px solid #d5ff02;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
         .big-screen .content .bottomPart .lights ul {
           position: relative;
           top: 20px;
@@ -3284,7 +3329,8 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 99; }
 
 .big-screen {
   width: 1180px;

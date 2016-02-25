@@ -4,16 +4,18 @@ $('.bottomPart .locks table tr .switch .switchSpace .button').on("click",functio
 
 
 $(".bottomPart .suspension ul li").click(function() {
-    $("li").removeClass("active");
+    $(".suspension ul li").removeClass("active");
     $(this).addClass("active");
 });
 
 $(".bottomPart .lightsType ul li").click(function() {
-    $("li").removeClass("active");
+    $(".lightsType ul li").removeClass("active");
+    console.log($(this));
     $(this).addClass("active");
 });
 
 $('.bottomPart .lights ul li').on('click',function(){
-    console.log($('.bottomPart').position());
-    $(this).parent('.lights').find('.button').css({left:pos.left + px});
+    console.log($(this).position());
+    var pos = $(this).position();
+    $('.bottomPart .lights .selector').css({left:pos.left + "px"});
 })

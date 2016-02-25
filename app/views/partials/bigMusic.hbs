@@ -148,7 +148,7 @@
     </div>
 </div>
 
-
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
@@ -181,6 +181,20 @@
             $(".playlist-songs > img").css('visibility', 'hidden');
             $(".playlist-songs > img[class='"+song+"']").css('visibility', 'visible');
 
+        });
+
+        $(function () {
+            $("#items").sortable({
+                placeholder: "highlight",
+                start: function (event, ui) {
+                    ui.item.toggleClass("highlight");
+                },
+                stop: function (event, ui) {
+                    ui.item.toggleClass("highlight");
+                }
+            });
+            $("#items").disableSelection();
+            $('#items > div').draggable( "disable" );
         });
 
     });

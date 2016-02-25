@@ -18,12 +18,23 @@
         <img src="../images/heat_front_white.png" alt="heat">
         <p class="white">Front</p>
     </li>
-    <li class="airflow">
+    <li class="airflow show">
         <img src="../images/airflow.png" alt="airflow">
         <p>Airflow</p>
     </li>
+    <li class="airflow hide">
+        <img src="../images/airflow-off.png" alt="airflow">
+        <p class="dark">Airflow</p>
+    </li>
     <li class="ventilation">
-        <img src="../images/ventilation.png" alt="ventilation">
+        <img src="../images/ventilation_7.png" alt="">
+        <img src="../images/ventilation_6.png" alt="">
+        <img src="../images/ventilation_5.png" alt="">
+        <img src="../images/ventilation_4.png" alt="">
+        <img src="../images/ventilation_3.png" alt="">
+        <img src="../images/ventilation_2.png" alt="">
+        <img src="../images/ventilation_1.png" alt="">
+        <img src="../images/ventilation_0.png" alt="">
     </li>
     <li class="rear show">
         <img src="../images/rear.png" alt="rear">
@@ -38,7 +49,7 @@
         <img src="../images/chauffage_g_4.png" alt="chauffage">
         <img src="../images/chauffage_g_3.png" alt="chauffage">
         <img src="../images/chauffage_g_2.png" alt="chauffage">
-        <img src="../images/chauffage_g.png" alt="chauffage_d">
+        <img src="../images/chauffage_g.png" alt="chauffage">
     </li>
     <li class="auto">
         <img src="../images/on_off.png" alt="on_off">
@@ -48,9 +59,13 @@
 <ul class="bot_ul">
     <li><img src="../images/reglage_g.png" alt="reglage"></li>
     <li class="txt_bot"><p>32</p></li>
-    <li class="sync">
+    <li class="sync show">
         <img src="../images/sync.png" alt="sync">
         <p>Sync</p>
+    </li>
+    <li class="sync hide">
+        <img src="../images/sync-off.png" alt="sync">
+        <p class="dark">Sync</p>
     </li>
     <li class="climate">
         <img src="../images/climate.png" alt="climate">
@@ -69,16 +84,31 @@
         $('.rear').click(function(){
             $('.rear').toggleClass('hide').toggleClass('show');
         });
+        $('.airflow').click(function(){
+           $('.airflow').toggleClass('hide').toggleClass('show');
+        });
+        $('.sync').click(function(){
+           $('.sync').toggleClass('hide').toggleClass('show');
+        });
+
 
         $(".chauffage_g").click(function() {
-            $(".chauffage_g img:last").fadeToggle("slow", function() {
+            $(".chauffage_g img:last").fadeToggle(1, function() {
                 $(this).prependTo(".chauffage_g").show()
             });
         });
         $(".chauffage_d").click(function() {
-            $(".chauffage_d img:last").fadeToggle("slow", function() {
+            $(".chauffage_d img:last").fadeToggle(1, function() {
                 $(this).prependTo(".chauffage_d").show()
             });
         });
+
+
+        $(".ventilation").click(function() {
+            $(".ventilation img:last").fadeToggle(1, function() {
+                $(this).prependTo(".ventilation").show()
+            });
+        });
+
     });
 </script>

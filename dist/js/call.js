@@ -6,27 +6,27 @@ $('.dialpad ul li p:first-child').on("click", function(){
 });
 
 var switchPhone = function(){
-  $('.phoneCard').css("display","none");
-  $('.tapDial').css("display","block");
+  $('.phoneCard').fadeOut();
+  $('.tapDial').fadeIn();
 };
 
 var switchPhone2 = function(){
-    $('.tapDial').css("display","none");
-    $('.phoneCard').css("display","block");
+    $('.tapDial').fadeOut();
+    $('.phoneCard').fadeIn();
 };
 
 var switchMusic1 = function(){
-    $('.playlistCard').css("display","none");
-    $('.songsCard').css("display","block");
+    $('.playlistCard').fadeOut();
+    $('.songsCard').fadeIn();
 };
 
 var switchMusic2 = function(){
-    $('.songsCard').css("display","none");
-    $('.playlistCard').css("display","block");
+    $('.songsCard').fadeOut();
+    $('.playlistCard').fadeIn();
 };
 
 var switchMusic3 = function(){
-    $('.songsCard').css("display","none");
-    $('.playlistCard').css("display","none");
-    $('.musicFullscreen').css("display","block");
+    $('.songsCard').fadeOut();
+    $('.playlistCard').fadeOut();
+    $('.musicFullscreen').fadeIn();
 };

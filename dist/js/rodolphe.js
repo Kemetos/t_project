@@ -22,3 +22,19 @@ var switchPlay = function(){
     $(".play").toggleClass("hide");
     $(".pause").toggleClass("show");
 }
+
+$(document).ready(function() {
+    $(document).keydown(function (e) {
+        e.preventDefault();
+        if (e.keyCode == 70) {
+            console.log("tadar");
+            $('.threat').fadeIn();
+            TweenMax.staggerFrom(".threat .content .choice",0.5, {opacity:0, y: 100, delay:0.5},0.4);
+
+        }
+    });
+});
+
+$('.threat .content .choice').on('click',function(){
+    $('.threat').fadeOut();
+})

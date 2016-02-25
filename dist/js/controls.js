@@ -22,9 +22,9 @@ $('.bottomPart .lights ul li').on('click',function(){
 });
 
 var showControls = function(){
-    $(".full-screen").css("display", "block");
+    $(".full-screen").fadeIn();
 };
 
 var hideControls = function(){
-    $(".full-screen").css("display", "none");
+    $(".full-screen").fadeOut();
 };

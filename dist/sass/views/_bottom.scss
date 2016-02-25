@@ -20,7 +20,11 @@
       margin-left: 45px;
     }
     .chauffage_g{
+      position: relative;
       margin-right: 80px;
+      img{
+        position: absolute;
+      }
     }
     .show{
       display: inline-block;
@@ -29,7 +33,8 @@
       display: none;
     }
     .heat_front{
-      margin-right: 80px;
+      margin-left: 30px;
+      margin-right: 70px;
       p{
         color: #6b6b6b ;
       }
@@ -46,21 +51,31 @@
       p{
         padding-top: 28px;
       }
+      p.dark{
+        color: #404040
+      }
     }
     .ventilation{
       margin-right: 70px;
+      img{
+        position: absolute;
+      }
     }
     .rear{
+      margin-left: 60px;
       margin-right: 80px;
       img{
         padding-top: 5px;
       }
-      .white{
-        color: white;
+      .dark{
+        color: #404040;
       }
     }
     .chauffage_d{
-      margin-right: 125px;
+      margin-right: 170px;
+      img{
+        position: absolute;
+      }
     }
     .auto{
       p{
@@ -89,6 +104,9 @@
       margin-right: 80px;
       p{
         padding-top: 20px;
+      }
+      p.dark{
+        color: #404040;
       }
       img{
         padding-left: 6px;

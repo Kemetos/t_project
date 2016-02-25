@@ -3,13 +3,13 @@
   height: 1440px !important;
   z-index:99999;
     .content{
-      background-color: white;
+      background-color: rgba(05, 05, 05, 0.8);
       width: 100%;
       height: 100%;
       z-index:99999;
 
       .upperPart{
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 718px;
         background-image: url(../images/bgControls.png);
@@ -86,6 +86,171 @@
               .avg {
                 margin-right: 0px;
               }
+        }
+      }
+      .bottomPart{
+        position: relative;
+        width: 100%;
+        height:885px;
+        .title{
+          position: relative;
+          text-align: center;
+          font-family: 'DinNextRegular', sans-serif;
+          font-size: 25px;
+          top:40px;
+        }
+        .lights{
+          position: relative;
+          top: 60px;
+          width:642px;
+          height: 56px;
+          background-color: #212121;
+          border-radius: 40px;
+          left:calc(50% - 321px);
+          .active{
+            position: absolute;
+            width: 124px;
+            height: 58px;
+            background-color: #464646;
+            border-radius: 40px;
+            border:1px solid #d5ff02;
+
+          }
+          ul{
+            position: relative;
+            top: 20px;
+            left: 40px;
+            li{
+              display: inline-block;
+              margin-right: 130px;
+              font-size: 20px;
+              font-family: 'DinNextLight', sans-serif;
+            }
+            .on{
+              margin-right: 0px;
+            }
+          }
+        }
+        .lightsType{
+          top: 60px;
+          position: relative;
+          width:642px;
+          height: 56px;
+
+
+          left:calc(50% - 321px);
+          ul{
+            position: relative;
+            top: 20px;
+            li{
+              display: inline-block;
+              background-color: #212121;
+              width: 124px;
+              height: 58px;
+              border-radius: 40px;
+              margin-right: 44px;
+              font-size: 20px;
+              font-family: 'DinNextLight', sans-serif;
+              text-align: center;
+              -webkit-transition: all 0.5s;
+              -moz-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -o-transition: all 0.5s;
+              transition: all 0.5s;
+            }
+            li.active{
+              border: 1px solid #d5ff02;
+              color:#d5ff02;
+            }
+            .ambiant{
+              margin-right: 0px;
+            }
+          }
+
+        }
+        .suspension{
+          position: absolute;
+          width: 164px;
+          height: 309px;
+          left:170px;
+          top:300px;
+          .title{
+            text-align: left;
+          }
+          ul{
+            position: relative;
+            top:85px;
+            li{
+              margin-bottom: 35px;
+              font-size: 15px;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+            }
+            li.active{
+              color: #d5ff02;
+            }
+          }
+        }
+        .locks{
+          position: absolute;
+          width: 510px;
+          height: 309px;
+          left:570px;
+          top:300px;
+          .title{
+            text-align: left;
+          }
+          table{
+            position: relative;
+            top:32px;
+            right: 35px;
+            border-collapse: separate;
+            border-spacing: 10px 25px;
+            tr{
+
+              .left{
+                text-align: right;
+              }
+              .right{
+                text-align: left;
+              }
+              .switch{
+                .switchSpace{
+                  position: relative;
+                  top: 16px;
+                  width: 86px;
+                  height: 44px;
+                  background-color: #212121;
+                  border-radius: 50px;
+
+                  .button{
+                    width: 44px;
+                    height: 44px;
+                    position: relative;
+                    left:0px;
+                    border:1px solid #6af8a9;
+                    border-radius: 40px;
+                    background-image: url(../images/unlock.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    transition: all 0.2s;
+                  }
+                  .button.lock{
+                    background-image: url(../images/lock.png);
+                    border:1px solid #dd3535;
+                    left:40px;
+                  }
+                }
+              }
+            }
+          }
         }
       }
 

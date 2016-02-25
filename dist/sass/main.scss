@@ -13,9 +13,11 @@
 @import 'views/smallMusic';
 @import 'views/smallPhone';
 @import 'views/smallPhone2';
+@import 'views/smallNav';
 @import 'views/bigNav';
 @import 'views/smallSpy';
 @import "views/bottom";
+@import "views/controls";
 
 body{
   color: #fff;
@@ -31,6 +33,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 99;
 }
 
 .big-screen{

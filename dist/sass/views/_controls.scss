@@ -1,0 +1,275 @@
+.big-screen{
+    width: 100%;
+  height: 1440px !important;
+  z-index:99999;
+    .content{
+      background-color: rgba(05, 05, 05, 0.8);
+      width: 100%;
+      height: 100%;
+      z-index:99999;
+
+      .upperPart{
+        position: relative;
+        width: 100%;
+        height: 718px;
+        background-image: url(../images/bgControls.png);
+        .title{
+          position: relative;
+          text-align: center;
+          font-family: 'DinNextRegular', sans-serif;
+          font-size: 25px;
+          top:40px;
+        }
+        .option{
+          position: absolute;
+          height: 40px;
+          width: 160px;
+          left:35px;
+          top:37px;
+          img{
+            float: left;
+          }
+          p{
+            position: relative;
+            font-family: 'DinNextRegular', sans-serif;
+            top: 11px;
+            left: 20px;
+          }
+        }
+        .info{
+          position: relative;
+          width: 850px;
+          height: 210px;
+          top: 40px;
+          left:calc(50% - 425px;);
+
+
+            .informations {
+              position: relative;
+              height: 210px;
+              width: 210px;
+              float: left;
+              margin-right: 100px;
+              .inside {
+                position: relative;
+                top: 60px;
+                left: 40px;
+                  .value {
+                    .number {
+                      float: left;
+                      font-size: 40pt;
+                      color: #282828;
+                    }
+                    .unit {
+                      font-size: 15pt;
+                      color: #d8ff1b;
+                      position: relative;
+                      top: 25px;
+                      left: 10px;
+                    }
+                  }
+                  .title {
+                    text-align: center;
+                    position: relative;
+                    right: 90px;
+                    top: 50px;
+                    font-size: 16px;
+                  }
+
+                }
+
+              }
+              .distance {
+                border: 2px solid #282828;
+                border-radius: 120px;
+              }
+              .avg {
+                margin-right: 0px;
+              }
+        }
+      }
+      .bottomPart{
+        position: relative;
+        width: 100%;
+        height:885px;
+        .title{
+          position: relative;
+          text-align: center;
+          font-family: 'DinNextRegular', sans-serif;
+          font-size: 25px;
+          top:40px;
+        }
+        .lights {
+          position: relative;
+          top: 60px;
+          width: 642px;
+          height: 56px;
+          background-color: #212121;
+          border-radius: 40px;
+          left: calc(50% - 321px);
+
+          .selector{
+            position: absolute;
+            width: 110px;
+            height: 53px;
+            background-color: #464646;
+            border-radius: 40px;
+            border:1px solid #d5ff02;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+
+          }
+          ul{
+            position: relative;
+            top: 20px;
+            left: 40px;
+            li{
+              display: inline-block;
+              margin-right: 130px;
+              font-size: 20px;
+              font-family: 'DinNextLight', sans-serif;
+              -webkit-transition: all 0.5s;
+              -moz-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -o-transition: all 0.5s;
+              transition: all 0.5s;
+            }
+            li.active{
+              color:#d5ff02;
+            }
+            .on{
+              margin-right: 0px;
+            }
+          }
+        }
+        .lightsType{
+          top: 60px;
+          position: relative;
+          width:642px;
+          height: 56px;
+
+
+          left:calc(50% - 321px);
+          ul{
+            position: relative;
+            top: 20px;
+            li{
+              display: inline-block;
+              background-color: #212121;
+              width: 124px;
+              height: 58px;
+              border-radius: 40px;
+              margin-right: 44px;
+              font-size: 20px;
+              font-family: 'DinNextLight', sans-serif;
+              text-align: center;
+              -webkit-transition: all 0.5s;
+              -moz-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -o-transition: all 0.5s;
+              transition: all 0.5s;
+            }
+            li.active{
+              border: 1px solid #d5ff02;
+              color:#d5ff02;
+            }
+            .ambiant{
+              margin-right: 0px;
+            }
+          }
+
+        }
+        .suspension{
+          position: absolute;
+          width: 164px;
+          height: 309px;
+          left:170px;
+          top:300px;
+          .title{
+            text-align: left;
+          }
+          ul{
+            position: relative;
+            top:85px;
+            li{
+              margin-bottom: 35px;
+              font-size: 15px;
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -ms-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s;
+            }
+            li.active{
+              color: #d5ff02;
+            }
+          }
+        }
+        .locks{
+          position: absolute;
+          width: 510px;
+          height: 309px;
+          left:570px;
+          top:300px;
+          .title{
+            text-align: left;
+          }
+          table{
+            position: relative;
+            top:32px;
+            right: 35px;
+            border-collapse: separate;
+            border-spacing: 10px 25px;
+            tr{
+
+              .left{
+                text-align: right;
+              }
+              .right{
+                text-align: left;
+              }
+              .switch{
+                .switchSpace{
+                  position: relative;
+                  top: 16px;
+                  width: 86px;
+                  height: 44px;
+                  background-color: #212121;
+                  border-radius: 50px;
+
+                  .button{
+                    width: 44px;
+                    height: 44px;
+                    position: relative;
+                    left:0px;
+                    border:1px solid #6af8a9;
+                    border-radius: 40px;
+                    background-image: url(../images/unlock.png);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    transition: all 0.2s;
+                  }
+                  .button.lock{
+                    background-image: url(../images/lock.png);
+                    border:1px solid #dd3535;
+                    left:40px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+}

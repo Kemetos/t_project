@@ -10,6 +10,11 @@ var switchPhone = function(){
   $('.tapDial').css("display","block");
 };
 
+var switchPhone2 = function(){
+    $('.tapDial').css("display","none");
+    $('.phoneCard').css("display","block");
+};
+
 var switchMusic1 = function(){
     $('.playlistCard').css("display","none");
     $('.songsCard').css("display","block");
